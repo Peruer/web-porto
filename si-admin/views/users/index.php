@@ -240,7 +240,7 @@ if (!isset($_SESSION['user'])) {
     function deleteOne(id) {
         alert('Yakin untuk hapus data ?');
         $.ajax({
-            url:"https://wirendi.amisbudi.cloud:81/konterku/api/user/delete.php",
+            url:"https://wirendi.amisbudi.cloud/konterku/api/user/delete.php",
             method:"DELETE",
             data: JSON.stringify({"id" : id}),
             success:function(data){
