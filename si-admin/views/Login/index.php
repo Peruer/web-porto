@@ -39,12 +39,12 @@
                 'password' : $('#password').val()
                 }
                 $.ajax({
-                    url:"https://amisbudi.cloud/web-porto/si-admin/api/auth/login.php",
+                    url:"https://wirendi.amisbudi.cloud/web-porto/si-admin/api/auth/login.php",
                     method:"POST",
                     data: JSON.stringify(formData),
                     success:function(data){
                         $('#action_button').attr('disabled', false);
-                        window.location.href = 'https://amisbudi.cloud/web-porto/si-admin/views/users/';
+                        window.location.href = 'https://wirendi.amisbudi.cloud/web-porto/si-admin/views/users/';
 
                     },
                     error: function(err) {                        
